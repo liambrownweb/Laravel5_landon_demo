@@ -4,8 +4,7 @@
     <div class="row">
 			<div class="medium-12 large-12 columns">
 				<h4>Clients</h4>
-                     <div class="medium-2  columns"><a class="button hollow success" href="{{ route('new_client') }}">ADD NEW CLIENT</a></div>
-                                                                                                                                  <pre>{{ var_dump($clients)}}</pre>
+				<div class="medium-2  columns"><a class="button hollow success" href="./clients_new.html">ADD NEW CLIENT</a></div>
 
 
 
@@ -23,7 +22,7 @@
 							<td>Mr. Roy Adams</td>
 							<td>roy@email.com</td>
 							<td>
-								<a class="hollow button" href="./new">EDIT</a>
+								<a class="hollow button" href="./clients_new.html">EDIT</a>
 								<a class="hollow button warning" href="./book_room.html">BOOK A ROOM</a>
 							</td>
 						</tr>

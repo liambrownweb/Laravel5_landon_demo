@@ -39,9 +39,6 @@
       </ul>
     </div>
 
-    <script>
-      $(document).foundation();
-    </script>
 
         <script src="{{ asset('js/vendor/jquery.js') }}"></script>
         <script src="{{ asset('js/vendor/what-input.js') }}"></script>
@@ -49,6 +46,9 @@
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('pickadate/lib/picker.js') }}"></script>
         <script src="{{ asset('pickadate/lib/picker.date.js') }}"></script>
+        <script>
+            $(document).foundation();
+        </script>
         <script>
             $('.datepicker').pickadate(
               {

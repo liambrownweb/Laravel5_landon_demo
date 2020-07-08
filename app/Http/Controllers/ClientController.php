@@ -37,11 +37,23 @@ class ClientController extends Controller
         return view('client/index', $data);
     }
 
-    public function newClient() {
+    public function newClient( Request $request ) {
         $data = [
+            'title' => $request->input('title'),
+            'name' => $request->input('name'),
+            'last_name' => $request->input('last_name'),
+            'address' => $request->input('address'),
+            'zip_code' => $request->input('zip_code'),
+            'city' => $request->input('city'),
+            'state' => $request->input('state'),
+            'email' => $request->input('email'),
             'titles'=> $this->titles,
             'modify' => 0
         ];
+        if ($request->isMethod('post')) {
+            dd($data);
+            return redirect('clients');
+        }
         return view('client/form', $data);
     }
 
